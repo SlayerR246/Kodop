@@ -5,7 +5,7 @@ https://www.kaggle.com/code/syedali110/weather-prediction-using-rnn/notebook
 
 weather-prediction-using-rnn.ipynb
 #%% 
-#pip install tensorflow
+#pip install tensorflow. In the first execution, Visual Studio is having trouble installing and running. This remain as comment
 
 from tensorflow import keras
 print(dir(keras))
@@ -13,13 +13,17 @@ from tensorflow.keras import models # type: ignore
 print(dir(models))
 from tensorflow.keras.models import Sequential # type: ignore
 print(Sequential)
+
 #%% 
-#!pip uninstall keras -y
+#!pip uninstall keras -y. This remain as comment due to keras having problem with Tensorflow.
+
+
 #%% 
 df = pd.read_csv('seattle-weather.csv')
 import tensorflow
 print(tensorflow.__file__)
 #%% 
+
 df.head()
 #!pip show tensorflow
 #%% 
